@@ -1,4 +1,4 @@
-<h3> Sikuli IDE
+<h3> Sikuli IDE</h3>
 
 Este repositório possui alguns códigos de funcionalidades comumente utilizadas no Sikuli IDE.
 
