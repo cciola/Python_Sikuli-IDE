@@ -69,4 +69,4 @@ Costumo declarar o trecho de código abaixo (que imprime o texto desejado no log
 print ('CPF gerado: ' + numCPF)
 ```
 <br></br><br></br>
-Dúvidas me contate carol.ciola@gmail.com
+Dúvidas me contate! carol.ciola@gmail.com
