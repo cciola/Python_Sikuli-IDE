@@ -36,7 +36,6 @@ Copie e cole o script abaixo no Sikuli e execute. O resultado será a exibição
 ```
 #Variáveis
 import random
-numCPF = cpf_funcional()
 
 #Função para gerar CPF válido de forma randômica
 def cpf_funcional():                                                                                             
@@ -54,6 +53,8 @@ def cpf_funcional():
         d2 = 0
     n.append(d2)                                                                                         
     return "%d%d%d%d%d%d%d%d%d%d%d" % tuple(n)
+
+numCPF = cpf_funcional()
 
 wait(2)
 popup('Script de teste finalizado com sucesso! CPF gerado: ' + numCPF)
