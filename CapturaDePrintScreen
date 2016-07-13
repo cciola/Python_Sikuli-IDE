@@ -1,15 +1,15 @@
-#Variáveis
+#Variáveis e bibliotecas
 import shutil
 
-screenshotsPasta = "C:\\Users\\cciola\\Desktop\\Sikuli IDE\\Screenshots_Sikuli\\"
+screenshotsPasta = "C:\\Users\\cciola\\Desktop\\Sikuli IDE\\Screenshots_Sikuli\\" #Define o caminho para a pasta onde as imagens serão salvas. É importante utilizar barra invertida dupla no caminho "\\"
 numPrint = 0
 
 #--------------------------------------------------------------------------------------------------#
-numPrint += 1
-shutil.move(capture(Screen()), screenshotsPasta + 'NomeDoArquivo_' + (str(int(numPrint))) + '.png')
+numPrint += 1 #Incrementa o número do print em +1
+shutil.move(capture(Screen()), screenshotsPasta + 'NomeDoArquivo_' + (str(int(numPrint))) + '.png') #captura o printscreen, informa o nome do arquivo a ser gerado + _numeração + extensão
 #--------------------------------------------------------------------------------------------------#
-popup('Script de teste finalizado com sucesso! Veja o print gerado no caminho ' + screenshotsPasta)
-print ('Arquivo gerado: ' + numPrint)
+popup('Script de teste finalizado com sucesso! Veja o print gerado no caminho ' + screenshotsPasta) #Exibe um popup na tela informando o caminho onde o arquivo foi salvo
+print ('Arquivo gerado: ' + numPrint) #Exibe no log de execução do Sikuli o nome do arquivo gerado
 #--------------------------------------------------------------------------------------------------#
 wait(1)
 exit()
