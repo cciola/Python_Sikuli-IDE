@@ -1,0 +1,15 @@
+#Variáveis
+import shutil
+
+screenshotsPasta = "C:\\Users\\cciola\\Desktop\\Sikuli IDE\\Screenshots_Sikuli\\"
+numPrint = 0
+
+#--------------------------------------------------------------------------------------------------#
+numPrint += 1
+shutil.move(capture(Screen()), screenshotsPasta + 'NomeDoArquivo_' + (str(int(numPrint))) + '.png')
+#--------------------------------------------------------------------------------------------------#
+popup('Script de teste finalizado com sucesso! Veja o print gerado no caminho ' + screenshotsPasta)
+print ('Arquivo gerado: ' + numPrint)
+#--------------------------------------------------------------------------------------------------#
+wait(1)
+exit()
