@@ -1,4 +1,4 @@
-"# SikuliIDE" 
+Este trecho de código 
 
 #Variáveis
 import random
