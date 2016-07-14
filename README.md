@@ -10,6 +10,8 @@ Como ainda estou iniciando nesta ferramenta, até o momento posso contrinuir com
 <br></br>
 - <a href="https://github.com/CarolCiola/SikuliIDE/blob/master/captura_screenshot.md"><b>captura_screenshot</b></a>: descreve como implementar captura de printscreen nos passos do script, salvando a imagem no diretório desejado, com nome personalizado e numeração automática, para gravar as imagens sem que haja sobreposição.
 
-- <a href="https://github.com/CarolCiola/SikuliIDE/blob/master/GeradorCPFrandomico.md"><b>GeradorCPFrandomico</b></a> descreve como implementar a geração randômica de CPF válido nos passos do script, informando no log do Sikuli o CPF que foi gerado no teste.
+- <a href="https://github.com/CarolCiola/SikuliIDE/blob/master/gera_CPF_aleatorio.md"><b>gera_CPF_aleatorio</b></a> descreve como implementar a geração randômica de CPF válido nos passos do script, informando no log do Sikuli o CPF que foi gerado.
+
+- <a href="https://github.com/CarolCiola/SikuliIDE/blob/master/gera_data_aleatoria.md"><b>gera_data_aleatoria</b></a> descreve como implementar a geração randômica de data válida nos passos do script, informando no log do Sikuli a data que foi gerada.
 <br></br><br></br>
 Qualquer dúvida me contate! carol.ciola@gmail.com
