@@ -21,11 +21,12 @@ dtNascto = datetime.date(year,month,day)
 ```
 <br></br>
 Não podem faltar as variáveis, que vamos declarar informando o intervalo dos anos, os 12 meses e um calendário de 1 a 28 dias (considerando o menor dia do mês 01 e o maior dia do menor mês, fevereiro). Isto foi feito para que não seja gerada uma data inválida como 31/02/2011, por exemplo.
+```
 year = random.randint(1950, 2016)
 month = random.randint(1, 12)
 day = random.randint(1, 28)
 data = datetime.date(year,month,day)
-
+```
 <br></br>
 Logo depois é necessário converter a data do formato data para string, e aqui também é estipulado o formato da data com as barras:
 ```
