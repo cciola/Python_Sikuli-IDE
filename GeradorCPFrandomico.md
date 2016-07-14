@@ -5,7 +5,7 @@ Declare esta biblioteca no topo do script:
 import random
 ```
 <br></br>
-Abaixo temos a variável numCPF que recebe a função <i>cpf_funcional()</i> (lembrando que deve ser declarada <b>APÓS</b> a função):
+Abaixo temos a variável <i>numCPF</i> que recebe a função <i>cpf_funcional()</i> (lembrando que deve ser declarada <b>APÓS</b> a função):
 ```
 numCPF = cpf_funcional()
 ```
