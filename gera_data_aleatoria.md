@@ -1,4 +1,4 @@
-# Gerador de data randômica
+# Gerador de data aleatória
 
 Declare estas bibliotecas no topo do script:
 ```
