@@ -57,7 +57,7 @@ wait(1)
 exit()
 ```
 <br></br>
-Costumo declarar o trecho de código abaixo (que imprime o texto desejado no log do Sikuli) logo após a variável que receberá a data gerada, pois caso o script dê erro ao executar e não chegue a exibir o popup, é possível verificar qual data foi utilizado.
+Costumo declarar o trecho de código abaixo (que imprime o texto desejado no log do Sikuli) logo após a variável que receberá a data gerada, pois caso o script dê erro ao executar e não chegue a exibir o popup, é possível verificar qual data foi utilizada.
 
 ```
 print ('Data de nascimento gerada: ' + dtNascto)
