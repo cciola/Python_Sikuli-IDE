@@ -24,7 +24,6 @@ shutil.move(capture(Screen()), screenshotsPasta + 'NomeDoArquivo_' + (str(int(nu
 
 Copie e cole o script abaixo no Sikuli e execute. O resultado será a exibição de um popup informanfo o caminho no qual o arquivo com o screenshot gerado.
 ```
-#Variáveis
 import shutil
 
 screenshotsPasta = "C:\\Users\\cciola\\Desktop\\Sikuli IDE\\Screenshots_Sikuli\\"
