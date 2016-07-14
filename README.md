@@ -8,7 +8,7 @@ O propósito do Sikuli é poder testar qualquer aplicação que apresente uma in
 
 Como ainda estou iniciando nesta ferramenta, até o momento posso contrinuir com estes códigos:
 <br></br>
-- <a href="https://github.com/CarolCiola/SikuliIDE/blob/master/CapturaDeScreenshot.md"><b>CapturaDeScreenshot</b></a>: descreve como implementar captura de printscreen nos passos do script, salvando a imagem no diretório desejado, com nome personalizado e numeração automática, para gravar as imagens sem que haja sobreposição.
+- <a href="https://github.com/CarolCiola/SikuliIDE/blob/master/captura_screenshot.md"><b>captura_screenshot</b></a>: descreve como implementar captura de printscreen nos passos do script, salvando a imagem no diretório desejado, com nome personalizado e numeração automática, para gravar as imagens sem que haja sobreposição.
 
 - <a href="https://github.com/CarolCiola/SikuliIDE/blob/master/GeradorCPFrandomico.md"><b>GeradorCPFrandomico</b></a> descreve como implementar a geração randômica de CPF válido nos passos do script, informando no log do Sikuli o CPF que foi gerado no teste.
 <br></br><br></br>
