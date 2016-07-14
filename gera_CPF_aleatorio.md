@@ -1,4 +1,4 @@
-# Gerador de CPF randômico
+# Gerador de CPF aleatório
 
 Declare esta biblioteca no topo do script:
 ```
@@ -34,7 +34,6 @@ def cpf_funcional():
 Copie e cole o script abaixo no Sikuli e execute. O resultado será a exibição de um popup contendo o CPF gerado.
 
 ```
-#Biblioteca
 import random
 
 #Função para gerar CPF válido de forma randômica
@@ -59,6 +58,7 @@ numCPF = cpf_funcional()
 wait(2)
 popup('Script de teste finalizado com sucesso! CPF gerado: ' + numCPF)
 print ('CPF gerado: ' + numCPF)
+
 wait(1)
 exit()
 ```
