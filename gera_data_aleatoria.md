@@ -5,8 +5,7 @@ Declare estas bibliotecas no topo do script:
 import datetime
 import random
 ```
-
-<br></br>
+<br>
 Esta é a declaração do intervalo de anos, meses e dias que serão utilizados na <i>datetime.date</i> para gerar datas de forma randômica, ou seja, datas diferentes a cada vez que a variável <i>dtNascto</i> que recebeu a função for declarada.
 ```
 year = random.randint(1950, 2016)
