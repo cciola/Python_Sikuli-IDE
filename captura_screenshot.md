@@ -31,6 +31,8 @@ numPrint = 0
 def capturaImagem():                                                                                             
     capturaScreenshot = shutil.move(capture(Screen()), screenshotsPasta + 'NomeDoArquivo_' + (str(int(numPrint)))
 
+numPrint += 1
+capturaImagem()
 popup('Script de teste finalizado com sucesso! Veja o print gerado no caminho ' + screenshotsPasta)
 print ('Arquivo gerado: ' + numPrint)
 
@@ -50,7 +52,7 @@ Deve-se declarar a instância <i>firstwindow</i> dentro de <i>shutil.move(captur
 
 # Veja o script funcionando
 
-Copie e cole o script abaixo no Sikuli e execute. O resultado será a exibição de um popup informando o caminho no qual o arquivo com o screenshot foi gerado.
+Copie e cole o script abaixo no Sikuli e execute. O resultado será a exibição de um popup informando o caminho no qual o arquivo com o screenshot da página que possui foco foi gerado.
 ```
 import shutil
 
@@ -63,6 +65,9 @@ firstWindow.highlight(2)
 #Função para capturar screenshot
 def capturaImagem():                                                                                             
     capturaScreenshot = shutil.move(capture(firstWindow), screenshotsPasta + 'NomeDoArquivo_' + (str(int(numPrint)))
+
+numPrint += 1
+capturaImagem()
 
 popup('Script de teste finalizado com sucesso! Veja o print gerado no caminho ' + screenshotsPasta)
 print ('Arquivo gerado: ' + numPrint)
