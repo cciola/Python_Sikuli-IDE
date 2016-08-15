@@ -33,6 +33,7 @@ def capturaImagem():
 
 numPrint += 1
 capturaImagem()
+
 popup('Script de teste finalizado com sucesso! Veja o print gerado no caminho ' + screenshotsPasta)
 print ('Arquivo gerado: ' + numPrint)
 
