@@ -4,13 +4,11 @@ Declare esta biblioteca no topo do script:
 ```
 import shutil
 ```
-<br></br>
 Abaixo temos as variáveis <i>numCPF</i>, que indicam o caminho da pasta a qual os arquivos de screenshot serão armazenados (lembre-se sempre de informar duas barras invertidas "\\" no caminho e ao final dele), e temos a variável <i>numPrint</i>, que é um mero contador para incrementar o número da imagem a ser salva.
 ```
 screenshotsPasta = "C:\\Users\\cciola\\Desktop\\Sikuli IDE\\Screenshots_Sikuli\\"
 numPrint = 0
 ```
-<br></br>
 Esta é a função que:
 - captura o screenshot <i>shutil.move(capture(Screen())</i>
 - armazena o arquivo na pasta indicada no caminho informado anteriormente <i>screenshotsPasta</i>
@@ -39,12 +37,6 @@ print ('Arquivo gerado: ' + numPrint)
 wait(1)
 exit()
 ```
-<br></br>
-Costumo declarar o trecho de código abaixo (que imprime o texto desejado no log do Sikuli) logo após a variável que efetuará o screenshot, pois caso o script dê erro ao executar e não chegue a exibir o popup, é possível verificar qual foi o último screenshot capturado.
-```
-print ('Arquivo gerado: ' + numPrint)
-```
-
 Caso deseje capturar somente a janela que possui o foco (função similar ao Alt+PrintScreen), deve-se utilizar:
 ```
 firstWindow = App.focusedWindow()
@@ -78,6 +70,9 @@ print ('Arquivo gerado: ' + numPrint)
 wait(1)
 exit()
 ```
-
-<br></br><br></br>
+Costumo declarar o trecho de código abaixo (que imprime o texto desejado no log do Sikuli) logo após a variável que efetuará o screenshot, pois caso o script dê erro ao executar e não chegue a exibir o popup, é possível verificar qual foi o último screenshot capturado.
+```
+print ('Arquivo gerado: ' + numPrint)
+```
+<br></br>
 Dúvidas me contate! carol.ciola@gmail.com
