@@ -3,7 +3,7 @@
 Este repositório  lista  alguns códigos de funcionalidades comumente utilizadas no Sikuli IDE. 
 
 Para quem não conhece, Sikuli é uma ferramenta visual para automatizar e testar interfaces gráficas (GUI), baseando-se em reconhecimento de imagem para realizar ações na tela do computador do usuário, como por exemplo: clicar, mover o mouse e digitar, entre outras ações, podendo assim ser utilizada para testar software independentemente da interface utilizada, sendo plataforma web ou desktop - e até mesmo mobile, se você espelhar a tela do celular no PC!
-<br>
+<br><br>
 O propósito do Sikuli é poder testar qualquer aplicação que apresente uma interface com o usuário. O Sikuli é baseado na linguagem <i>Jython</i> (Java + Python). A linguagem Python é utilizada para a criação da biblioteca, uma vez que apresenta uma curva de aprendizagem curta e pode ser integrada ao ambiente.
 
 Como ainda estou iniciando nesta ferramenta, até o momento posso contribuir com estes códigos:
