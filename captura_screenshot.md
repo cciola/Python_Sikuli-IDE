@@ -29,7 +29,7 @@ numPrint = 0
 
 #Função para capturar screenshot
 def capturaImagem():                                                                                             
-    capturaScreenshot = shutil.move(capture(Screen()), screenshotsPasta + 'NomeDoArquivo_' + (str(int(numPrint)))
+    shutil.move(capture(Screen()), screenshotsPasta + 'NomeDoArquivo_' + (str(int(numPrint)))
 
 numPrint += 1
 capturaImagem()
@@ -65,7 +65,7 @@ firstWindow.highlight(2)
 
 #Função para capturar screenshot
 def capturaImagem():                                                                                             
-    capturaScreenshot = shutil.move(capture(firstWindow), screenshotsPasta + 'NomeDoArquivo_' + (str(int(numPrint)))
+    shutil.move(capture(firstWindow), screenshotsPasta + 'NomeDoArquivo_' + (str(int(numPrint)))
 
 numPrint += 1
 capturaImagem()
