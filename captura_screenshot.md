@@ -19,7 +19,7 @@ def numPrint_func():
     numPrint += 1
 ```
 Esta é a função que:
-- aguarda o tempo de 1 segundo para passar ao próximo passo<i>wait(1)</i>
+- aguarda o tempo de 1 segundo para passar ao próximo passo <i>wait(1)</i>
 - chama a função de incremento do número do print <i>numPrint_func</i>
 - captura o screenshot <i>shutil.move(capture(Screen())</i>
 - armazena o arquivo na pasta indicada no caminho informado anteriormente <i>screenshotsPasta</i>
