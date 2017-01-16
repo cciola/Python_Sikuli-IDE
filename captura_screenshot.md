@@ -41,8 +41,8 @@ import shutil
 screenshotsPasta = "C:\\Users\\cciola\\Desktop\\Sikuli IDE\\Screenshots_Sikuli\\"
 
 #Função para incrementar 1 no número do print
+numPrint = 0
 def numPrint_func():
-    numPrint = 0
     global numPrint 
     numPrint += 1
     
@@ -50,12 +50,12 @@ def numPrint_func():
 def capturaImagem_func():
     wait(1)
     numPrint_func()
-    shutil.move(capture(Screen()), screenshotsPasta + 'TC35667_' + (str(int(numPrint))) + '.png')
+    shutil.move(capture(Screen()), screenshotsPasta + 'NomeDoArquivo_' + (str(int(numPrint))) + '.png')
 
 capturaImagem()
 
 popup('Script de teste finalizado com sucesso! Veja o print gerado no caminho ' + screenshotsPasta)
-print ('Arquivo gerado: ' + numPrint)
+print ('Número do arquivo gerado: %d' %numPrint)
 
 wait(1)
 exit()
