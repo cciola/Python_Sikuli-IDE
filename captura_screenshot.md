@@ -8,13 +8,15 @@ Abaixo temos a variávels <i>screenshotsPasta</i>, que indica o caminho da pasta
 ```
 screenshotsPasta = "C:\\Users\\cciola\\Desktop\\Sikuli IDE\\Screenshots_Sikuli\\"
 ```
+Abaixo declararamos o valor da variável <i>numPrint</i>:
+```
+numPrint = 0
+```
 Esta é a função que:
-- declara o valor da variáel <i>numPrint</i> igual a zero
 - indica que a variável <i>numPrint</i> é global
 - incrementa o valor de <i>numPrint</i> em 1
 ```
 def numPrint_func():
-    numPrint = 0
     global numPrint 
     numPrint += 1
 ```
@@ -39,9 +41,10 @@ Copie e cole o script abaixo no Sikuli e execute. O resultado será a exibição
 import shutil
 
 screenshotsPasta = "C:\\Users\\cciola\\Desktop\\Sikuli IDE\\Screenshots_Sikuli\\"
+numPrint = 0
 
 #Função para incrementar 1 no número do print
-numPrint = 0
+
 def numPrint_func():
     global numPrint 
     numPrint += 1
