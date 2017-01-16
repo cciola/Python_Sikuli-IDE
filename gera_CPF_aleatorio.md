@@ -5,22 +5,17 @@ Declare esta biblioteca no topo do script:
 import random
 ```
 <br>
-Abaixo temos a variável <i>numCPF</i> que recebe a função <i>cpf_funcional()</i> (lembrando que deve ser declarada <b>APÓS</b> a função):
-```
-numCPF = cpf_funcional()
-```
-<br>
 Esta é a função que calcula e gera o CPF válido de forma randômica, ou seja, CPFs diferentes a cada vez que a função <i>cpf_funcional()</i> for declarada.
 ```
-def cpf_funcional():                                                                                             
+def cpf_funcional_func():                                                                                             
     n = [random.randrange(10) for i in xrange(9)]                                                                                            
-#calcula digito 1 e acrescenta ao numero
+#calcula dígito 1 e acrescenta ao número
     s = sum(x * y for x, y in zip(n, range(10, 1, -1)))
     d1 = 11 - s % 11
     if d1 >= 10:
         d1 = 0
     n.append(d1)                                                                                                
-#calcula digito 2 e acrescenta ao numero
+#calcula dígito 2 e acrescenta ao número
     s = sum(x * y for x, y in zip(n, range(11, 1, -1)))
     d2 = 11 - s % 11
     if d2 >= 10:
@@ -36,7 +31,7 @@ Copie e cole o script abaixo no Sikuli e execute. O resultado será a exibição
 import random
 
 #Função para gerar CPF válido de forma randômica
-def cpf_funcional():                                                                                             
+def cpf_funcional_func():                                                                                             
     n = [random.randrange(10) for i in xrange(9)]                                                                                            
 #Calcula dígito 1 e acrescenta ao número
     s = sum(x * y for x, y in zip(n, range(10, 1, -1)))
@@ -52,11 +47,11 @@ def cpf_funcional():
     n.append(d2)                                                                                         
     return "%d%d%d%d%d%d%d%d%d%d%d" % tuple(n)
 
-numCPF = cpf_funcional()
+cpf_funcional_func()
 
 wait(2)
-popup('Script de teste finalizado com sucesso! CPF gerado: ' + numCPF)
-print ('CPF gerado: ' + numCPF)
+popup('Script de teste finalizado com sucesso! CPF gerado: ' + cpf_funcional_func())
+print ('CPF gerado: ' + cpf_funcional_func())
 
 wait(1)
 exit()
