@@ -9,13 +9,13 @@ Esta é a função que calcula e gera o CPF válido de forma randômica, ou seja
 ```
 def cpf_funcional_func():                                                                                             
     n = [random.randrange(10) for i in xrange(9)]                                                                                            
-#calcula dígito 1 e acrescenta ao número
+#calcula o dígito 1 e acrescenta ao número
     s = sum(x * y for x, y in zip(n, range(10, 1, -1)))
     d1 = 11 - s % 11
     if d1 >= 10:
         d1 = 0
     n.append(d1)                                                                                                
-#calcula dígito 2 e acrescenta ao número
+#calcula o dígito 2 e acrescenta ao número
     s = sum(x * y for x, y in zip(n, range(11, 1, -1)))
     d2 = 11 - s % 11
     if d2 >= 10:
@@ -33,13 +33,13 @@ import random
 #Função para gerar CPF válido de forma randômica
 def cpf_funcional_func():                                                                                             
     n = [random.randrange(10) for i in xrange(9)]                                                                                            
-#Calcula dígito 1 e acrescenta ao número
+#calcula o dígito 1 e acrescenta ao número
     s = sum(x * y for x, y in zip(n, range(10, 1, -1)))
     d1 = 11 - s % 11
     if d1 >= 10:
         d1 = 0
     n.append(d1)                                                                                                
-#Calcula dígito 2 e acrescenta ao número
+#calcula o dígito 2 e acrescenta ao número
     s = sum(x * y for x, y in zip(n, range(11, 1, -1)))
     d2 = 11 - s % 11
     if d2 >= 10:
@@ -51,7 +51,7 @@ cpf_funcional_func()
 
 wait(2)
 popup('Script de teste finalizado com sucesso! CPF gerado: ' + cpf_funcional_func())
-print ('CPF gerado: ' + cpf_funcional_func())
+print ('CPF gerado: ' + cpf_funcional_func)
 
 wait(1)
 exit()
