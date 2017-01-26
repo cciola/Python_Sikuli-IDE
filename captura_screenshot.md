@@ -1,21 +1,21 @@
 # Captura de screenshot
 
+```
+### ATENÇÃO: script aplicável na versão 1.1.1 do Sikuli. Em versões posteriores pode não funcionar. ###
+```
 Declare esta biblioteca no topo do script:
 ```
 import shutil
 ```
-Abaixo temos a variávels <i>screenshotsPasta</i>, que indica o caminho da pasta a qual os arquivos de screenshot serão armazenados (lembre-se sempre de informar duas barras invertidas "\\" no caminho e ao final dele), e temos a função <i>numPrint_func</i>, que é um mero contador para incrementar o número da imagem a ser salva.
+Abaixo temos a variávels <i>screenshotsPasta</i>, que indica o caminho da pasta a qual os arquivos de screenshot serão armazenados, e temos a função <i>numPrint_func</i>, que é um mero contador para incrementar o número da imagem a ser salva.
 ```
-screenshotsPasta = "C:\\Users\\cciola\\Desktop\\Sikuli IDE\\Screenshots_Sikuli\\"
+screenshotsPasta = "C:\Users\cciola\Desktop\Sikuli IDE\Screenshots_Sikuli"
 ```
-Abaixo declararamos o valor da variável <i>numPrint</i>:
-```
-numPrint = 0
-```
-Esta é a função que:
+Abaixo declaramos o valor da variável <i>numPrint</i> e em seguida declaramos a função para:
 - indica que a variável <i>numPrint</i> é global
 - incrementa o valor de <i>numPrint</i> em 1
 ```
+numPrint = 0
 def numPrint_func():
     global numPrint 
     numPrint += 1
@@ -40,11 +40,10 @@ Copie e cole o script abaixo no Sikuli e execute. O resultado será a exibição
 ```
 import shutil
 
-screenshotsPasta = "C:\\Users\\cciola\\Desktop\\Sikuli IDE\\Screenshots_Sikuli\\"
-numPrint = 0
+screenshotsPasta = "C:\Users\cciola\Desktop\Sikuli IDE\Screenshots_Sikuli"
 
 #Função para incrementar 1 no número do print
-
+numPrint = 0
 def numPrint_func():
     global numPrint 
     numPrint += 1
@@ -57,7 +56,7 @@ def capturaImagem_func():
 
 capturaImagem()
 
-popup('Script de teste finalizado com sucesso! Veja o print gerado no caminho ' + screenshotsPasta)
+popup('Script de teste finalizado com sucesso! Veja o print gerado no caminho \n %s' %screenshotsPasta)
 print ('Número do arquivo gerado: %d' %numPrint)
 
 wait(1)
@@ -75,7 +74,7 @@ Aqui temos:
 Deve-se declarar a instância <i>firstwindow</i> dentro de <i>shutil.move(capture())</i>, ficando <i>shutil.move(capture(firstwindow)</i>.
 Costumo declarar o trecho de código abaixo (que imprime o texto desejado no log do Sikuli) logo após a variável que efetuará o screenshot, pois caso o script dê erro ao executar e não chegue a exibir o popup, é possível verificar qual foi o último screenshot capturado.
 ```
-print ('Arquivo gerado: ' + numPrint)
+print ('Arquivo gerado: %d' %numPrint)
 ```
 <br></br>
 Dúvidas me contate! carol.ciola@gmail.com
