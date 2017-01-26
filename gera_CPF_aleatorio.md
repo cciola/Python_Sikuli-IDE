@@ -50,8 +50,8 @@ def cpf_funcional_func():
 cpf_funcional_func()
 
 wait(2)
-popup('Script de teste finalizado com sucesso! CPF gerado: ' + cpf_funcional_func())
-print ('CPF gerado: ' + cpf_funcional_func)
+popup('Script de teste finalizado com sucesso! \nCPF gerado: %s' %cpf_funcional_func())
+print ('CPF gerado: %d' %cpf_funcional_func)
 
 wait(1)
 exit()
@@ -59,7 +59,7 @@ exit()
 <br>
 Costumo declarar o trecho de código abaixo (que imprime o texto desejado no log do Sikuli) logo após a variável que receberá o CPF gerado, pois caso o script dê erro ao executar e não chegue a exibir o popup, é possível verificar qual CPF foi utilizado.
 ```
-print ('CPF gerado: ' + numCPF)
+print ('CPF gerado: %d' %numCPF)
 ```
 <br></br>
 Dúvidas me contate! carol.ciola@gmail.com
