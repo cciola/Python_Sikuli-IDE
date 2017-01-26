@@ -5,10 +5,8 @@ Declare esta biblioteca no topo do script:
 import shutil
 ```
 Abaixo temos a variávels <i>screenshotsPasta</i>, que indica o caminho da pasta a qual os arquivos de screenshot serão armazenados, e temos a função <i>numPrint_func</i>, que é um mero contador para incrementar o número da imagem a ser salva. 
-
-(OBS.: para versões do Sikuli posteriores à 1.1.1, deve-se declarar o endereço da pasta com barra invertida dupla "\\", inclusive ao final do arquivo).
 ```
-screenshotsPasta = "C:\Users\cciola\Desktop\Sikuli IDE\Screenshots_Sikuli"
+screenshotsPasta = "C:\Users\cciola\Desktop\Sikuli IDE\Screenshots_Sikuli\\"
 ```
 Abaixo declaramos o valor da variável <i>numPrint</i> e em seguida declaramos a função para:
 - indica que a variável <i>numPrint</i> é global
