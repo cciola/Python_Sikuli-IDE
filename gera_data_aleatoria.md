@@ -46,8 +46,8 @@ data = datetime.date(year,month,day)
 dtNascto = data.strftime('%d/%m/%Y')
 
 wait(2)
-popup('Script de teste finalizado com sucesso! Data gerada: ' + dtNascto, 'Alerta do Sikuli')
-print ('Data de nascimento gerada: ' + dtNascto)
+popup('Script de teste finalizado com sucesso! \nData gerada: %s' %dtNascto, 'Alerta do Sikuli')
+print ('Data de nascimento gerada: %s' %dtNascto)
 
 wait(1)
 exit()
@@ -55,7 +55,7 @@ exit()
 <br>
 Costumo declarar o trecho de código abaixo (que imprime o texto desejado no log do Sikuli) logo após a variável que receberá a data gerada, pois caso o script dê erro ao executar e não chegue a exibir o popup, é possível verificar qual data foi utilizada.
 ```
-print ('Data de nascimento gerada: ' + dtNascto)
+print ('Data de nascimento gerada: %s' %dtNascto)
 ```
 <br></br>
 Dúvidas me contate! carol.ciola@gmail.com
