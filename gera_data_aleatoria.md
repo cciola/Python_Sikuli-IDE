@@ -33,7 +33,7 @@ dtNascto = data.strftime('%d/%m/%Y')
 <br>
 # Veja o script funcionando
 
-Copie e cole o script abaixo no Sikuli e execute. O resultado será a exibição de um popup contendo o CPF gerado.
+Copie e cole o script abaixo no Sikuli e execute. O resultado será a exibição de um popup contendo a data gerada.
 ```
 import datetime
 import random
