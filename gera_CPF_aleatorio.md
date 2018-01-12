@@ -4,8 +4,10 @@ Declare esta biblioteca no topo do script:
 ```python
 import random
 ```
-<br>
-Esta é a função que calcula e gera o CPF válido de forma randômica, ou seja, CPFs diferentes a cada vez que a função <i>cpf_funcional_func()</i> for declarada.
+
+texto
+
+
 ```python
 def cpf_funcional_func():                                                                                             
     n = [random.randrange(10) for i in xrange(9)]                                                                                            
@@ -56,8 +58,8 @@ print ('CPF gerado: %d' %cpf_funcional_func)
 wait(1)
 exit()
 ```
-<br>
 Costumo declarar o trecho de código abaixo (que imprime o texto desejado no log do Sikuli) logo após a variável que receberá o CPF gerado, pois caso o script dê erro ao executar e não chegue a exibir o popup, é possível verificar qual CPF foi utilizado.
+
 ```python
 print ('CPF gerado: %d' %numCPF)
 ```
