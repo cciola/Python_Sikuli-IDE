@@ -4,9 +4,7 @@ Declare esta biblioteca no topo do script:
 ```python
 import random
 ```
-
-texto
-
+Esta é a função que calcula e gera o CPF válido de forma randômica, ou seja, CPFs diferentes a cada vez que a função cpf_funcional_func() for declarada.
 
 ```python
 def cpf_funcional_func():                                                                                             
