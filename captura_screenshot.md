@@ -51,7 +51,7 @@ def capturaImagem_func():
     numPrint_func()
     shutil.move(capture(Screen()), screenshotsPasta + 'NomeDoArquivo_' + (str(int(numPrint))) + '.png')
 
-capturaImagem()
+capturaImagem_func()
 
 popup('Script de teste finalizado com sucesso! Veja o print gerado no caminho \n %s' %screenshotsPasta)
 print ('Número do arquivo gerado: %d' %numPrint)
